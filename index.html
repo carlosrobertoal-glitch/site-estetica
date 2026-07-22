@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arlete Centro de Estética | Massagem Linfática e Limpeza de Pele em Porto Velho</title>
+<meta name="description" content="Arlete Centro de Estética — massagem linfática e limpeza de pele facial em Aponiã, Porto Velho. Agende pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#faf6f0;
+    --ink:#2a231f;
+    --ink-soft:#5c534d;
+    --rose:#a9707a;
+    --rose-deep:#7c4a55;
+    --gold:#b08a4e;
+    --sage:#5b6b54;
+    --card:#f1eae0;
+    --line:#e2d8c9;
+    --radius:2px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Work Sans',sans-serif;
+    font-weight:400;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    color:var(--ink);
+    line-height:1.15;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px;}
+  .eyebrow{
+    font-family:'Work Sans',sans-serif;
+    font-size:12px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--rose-deep);
+    font-weight:600;
+  }
+
+  /* divider - echo of the logo's flowing line */
+  .flow-divider{width:100%;height:38px;margin:6px 0;}
+  .flow-divider svg{width:100%;height:100%;display:block;}
+
+  /* header */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(250,246,240,.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 28px;max-width:1120px;margin:0 auto;
+  }
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand img{height:44px;width:auto;}
+  .brand-word{font-family:'Fraunces',serif;font-size:19px;letter-spacing:.04em;color:var(--ink);}
+  .brand-word small{display:block;font-family:'Work Sans',sans-serif;font-size:9px;letter-spacing:.24em;color:var(--rose-deep);font-weight:600;text-transform:uppercase;}
+  nav.links{display:flex;gap:34px;font-size:14px;}
+  nav.links a{color:var(--ink-soft);transition:color .2s;}
+  nav.links a:hover{color:var(--rose-deep);}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--rose-deep);color:#fff;
+    padding:12px 24px;font-size:14px;font-weight:500;
+    border-radius:var(--radius);
+    letter-spacing:.02em;
+    transition:background .2s, transform .2s;
+    border:1px solid var(--rose-deep);
+  }
+  .btn:hover{background:var(--ink);border-color:var(--ink);transform:translateY(-1px);}
+  .btn.ghost{background:transparent;color:var(--rose-deep);}
+  .btn.ghost:hover{background:var(--rose-deep);color:#fff;}
+  .nav-cta{display:none;}
+  @media(min-width:880px){ .nav-cta{display:inline-flex;} }
+  nav.links{display:none;}
+  @media(min-width:880px){ nav.links{display:flex;} }
+
+  /* hero */
+  .hero{
+    padding:96px 0 60px;
+    text-align:center;
+  }
+  .hero img.logo-mark{height:150px;width:auto;margin:0 auto 20px;}
+  .hero h1{
+    font-size:clamp(34px,5vw,58px);
+    max-width:780px;margin:0 auto;
+    font-weight:400;
+  }
+  .hero h1 em{font-style:italic;color:var(--rose-deep);font-weight:500;}
+  .hero p.lede{
+    max-width:520px;margin:22px auto 34px;
+    color:var(--ink-soft);font-size:17px;
+  }
+  .hero .cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+  .hero .meta-row{
+    margin-top:44px;display:flex;gap:36px;justify-content:center;flex-wrap:wrap;
+    font-size:13px;color:var(--ink-soft);letter-spacing:.02em;
+  }
+  .hero .meta-row span{display:flex;align-items:center;gap:8px;}
+  .dot{width:5px;height:5px;border-radius:50%;background:var(--gold);display:inline-block;}
+
+  section{padding:78px 0;}
+  .section-head{max-width:600px;margin-bottom:46px;}
+  .section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+  .section-head h2{font-size:clamp(28px,3.4vw,40px);margin-top:10px;}
+
+  /* sobre */
+  .sobre{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .sobre-grid{display:grid;grid-template-columns:1fr;gap:40px;align-items:center;}
+  @media(min-width:860px){ .sobre-grid{grid-template-columns:1.1fr .9fr;gap:70px;} }
+  .sobre-text p{color:var(--ink-soft);margin-top:16px;font-size:16px;}
+  .sobre-photo{
+    border:1px solid var(--line);
+    overflow:hidden;
+    margin-bottom:20px;
+  }
+  .sobre-photo img{
+    width:100%;height:100%;
+    aspect-ratio:4/5;
+    object-fit:cover;
+    display:block;
+  }
+  .sobre-figure{
+    position:relative;
+    background:var(--paper);
+    border:1px solid var(--line);
+    padding:40px 34px;
+  }
+  .sobre-figure .num{font-family:'Fraunces',serif;font-size:56px;color:var(--rose-deep);line-height:1;}
+  .sobre-figure .cap{font-size:13px;color:var(--ink-soft);letter-spacing:.03em;margin-top:8px;}
+  .sobre-figure hr{border:none;border-top:1px solid var(--line);margin:22px 0;}
+
+  /* servicos */
+  .services-grid{display:grid;grid-template-columns:1fr;gap:26px;}
+  @media(min-width:760px){ .services-grid{grid-template-columns:1fr 1fr;} }
+  .service-card{
+    background:var(--paper);
+    border:1px solid var(--line);
+    padding:38px 34px;
+    transition:border-color .2s, transform .2s;
+  }
+  .service-card:hover{border-color:var(--gold);transform:translateY(-3px);}
+  .service-card .tag{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;}
+  .service-card h3{font-size:24px;margin-top:12px;}
+  .service-card p{color:var(--ink-soft);margin-top:14px;font-size:15px;}
+  .service-card .benefits{margin-top:18px;list-style:none;font-size:14px;color:var(--ink-soft);}
+  .service-card .benefits li{padding-left:18px;position:relative;margin-top:8px;}
+  .service-card .benefits li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:1px;background:var(--rose-deep);}
+
+  /* depoimentos */
+  .depo{background:var(--ink);color:var(--paper);}
+  .depo .section-head h2{color:var(--paper);}
+  .depo .eyebrow{color:#d8b98f;}
+  .depo-grid{display:grid;grid-template-columns:1fr;gap:26px;}
+  @media(min-width:760px){ .depo-grid{grid-template-columns:repeat(3,1fr);} }
+  .depo-card{
+    background:rgba(250,246,240,.05);
+    border:1px solid rgba(250,246,240,.14);
+    padding:30px 26px;
+  }
+  .depo-card .quote-mark{font-family:'Fraunces',serif;font-size:40px;color:var(--gold);line-height:1;}
+  .depo-card p.text{margin-top:6px;font-size:15px;color:#e7e0d6;font-style:italic;}
+  .depo-card .who{margin-top:18px;font-size:13px;letter-spacing:.05em;color:#c9a97f;text-transform:uppercase;}
+
+  /* contato */
+  .contato-grid{display:grid;grid-template-columns:1fr;gap:40px;}
+  @media(min-width:880px){ .contato-grid{grid-template-columns:1fr 1fr;} }
+  .info-list{margin-top:26px;}
+  .info-row{
+    display:flex;gap:16px;padding:18px 0;border-top:1px solid var(--line);
+  }
+  .info-row:last-child{border-bottom:1px solid var(--line);}
+  .info-row .label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);width:120px;flex-shrink:0;padding-top:2px;}
+  .info-row .value{font-size:15px;color:var(--ink);}
+  .info-row .value a{color:var(--rose-deep);border-bottom:1px solid transparent;}
+  .info-row .value a:hover{border-color:var(--rose-deep);}
+  .map-frame{border:1px solid var(--line);width:100%;height:100%;min-height:320px;filter:sepia(6%) saturate(92%);}
+  .map-frame iframe{width:100%;height:100%;min-height:320px;border:0;display:block;}
+
+  footer{
+    padding:40px 0;border-top:1px solid var(--line);
+    text-align:center;color:var(--ink-soft);font-size:13px;
+  }
+  footer .brand{justify-content:center;margin-bottom:14px;}
+  footer .brand img{height:34px;}
+
+  .whatsapp-float{
+    position:fixed;bottom:22px;right:22px;z-index:60;
+    background:var(--rose-deep);color:#fff;
+    width:56px;height:56px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 20px rgba(42,35,31,.25);
+    transition:transform .2s, background .2s;
+  }
+  .whatsapp-float:hover{background:var(--ink);transform:translateY(-2px) scale(1.04);}
+  .whatsapp-float svg{width:26px;height:26px;fill:#fff;}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{transition:none !important;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <img src="logo_ciec.png" alt="Arlete Centro de Estética">
+    </div>
+    <nav class="links">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn nav-cta" href="https://wa.me/5569992472940?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Arlete%20Centro%20de%20Est%C3%A9tica." target="_blank" rel="noopener">Agendar horário</a>
+  </div>
+</header>
+
+<section class="hero wrap">
+  <p class="eyebrow">Aponiã · Porto Velho, RO</p>
+  <h1>Cuidado que se sente <em>e</em> se vê.</h1>
+  <p class="lede">Massagem linfática e limpeza de pele facial em um espaço pensado para o seu tempo — atendimento próximo, individual, feito para você se sentir bem em casa.</p>
+  <div class="cta-row">
+    <a class="btn" href="https://wa.me/5569992472940?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Arlete%20Centro%20de%20Est%C3%A9tica." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+    <a class="btn ghost" href="#servicos">Ver serviços</a>
+  </div>
+  <div class="meta-row">
+    <span><span class="dot"></span> 12 anos cuidando de sua saúde e beleza</span>
+    <span><span class="dot"></span> Rua Paulo Forte, 6003 — Aponiã</span>
+    <span><span class="dot"></span> (69) 99247-2940</span>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="flow-divider" aria-hidden="true">
+    <svg viewBox="0 0 1000 40" preserveAspectRatio="none">
+      <path d="M0 20 C 150 0, 250 40, 400 20 S 650 0, 800 22 S 950 36, 1000 18" fill="none" stroke="#b08a4e" stroke-width="1.3"/>
+    </svg>
+  </div>
+</div>
+
+<section class="sobre" id="sobre">
+  <div class="wrap sobre-grid">
+    <div class="sobre-text">
+      <p class="eyebrow">Sobre a Arlete</p>
+      <h2>Estética pensada em escala humana.</h2>
+      <p>Há 12 anos, a Arlete Centro de Estética atende Porto Velho com um propósito simples: oferecer massagem linfática e limpeza de pele com atenção real a cada cliente, sem pressa e sem protocolo genérico.</p>
+      <p>Cada sessão é conduzida de forma individual, respeitando o corpo, a pele e o momento de quem chega. É esse cuidado próximo — de bairro, de nome, de retorno — que faz quem vem uma vez, voltar.</p>
+    </div>
+    <div>
+    <div class="sobre-photo">
+      <img src="atendimento.jpg" alt="Atendimento na Arlete Centro de Estética">
+    </div>
+    <div class="sobre-figure">
+      <div class="num">12</div>
+      <div class="cap">Anos de compromisso, excelência e dedicação ao cuidado profissional</div>
+      <hr>
+      <div class="num">1:1</div>
+      <div class="cap">Atendimento individual, do início ao fim da sessão</div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow">Serviços</p>
+      <h2>Dois cuidados, um só objetivo: bem-estar.</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <p class="tag">Corpo</p>
+        <h3>Massagem Linfática</h3>
+        <p>Técnica manual voltada à circulação e à sensação de leveza, indicada para quem busca relaxamento e cuidado contínuo com o corpo.</p>
+        <ul class="benefits">
+          <li>Estímulo à circulação e drenagem</li>
+          <li>Sensação de leveza e relaxamento</li>
+          <li>Sessões individuais e no seu ritmo</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <p class="tag">Rosto</p>
+        <h3>Limpeza de Pele Facial</h3>
+        <p>Higienização profunda da pele do rosto, com extração e finalização calmante — para uma pele mais leve, limpa e cuidada.</p>
+        <ul class="benefits">
+          <li>Limpeza profunda e extração</li>
+          <li>Pele com aspecto mais uniforme</li>
+          <li>Indicada para manutenção periódica</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="depo" id="depoimentos">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow">Depoimentos</p>
+      <h2>Quem já passou por aqui, volta.</h2>
+    </div>
+    <div class="depo-grid">
+      <div class="depo-card">
+        <div class="quote-mark">“</div>
+        <p class="text">Saí de lá completamente renovada, o atendimento é muito atencioso do início ao fim.</p>
+        <p class="who">Cliente Arlete Estética</p>
+      </div>
+      <div class="depo-card">
+        <div class="quote-mark">“</div>
+        <p class="text">Ambiente tranquilo e um cuidado que a gente sente que é de verdade, não é só mais um horário.</p>
+        <p class="who">Cliente Arlete Estética</p>
+      </div>
+      <div class="depo-card">
+        <div class="quote-mark">“</div>
+        <p class="text">Já virou parte da minha rotina de autocuidado. Recomendo de olhos fechados.</p>
+        <p class="who">Cliente Arlete Estética</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Contato</p>
+      <h2>Vamos marcar seu horário.</h2>
+    </div>
+    <div class="contato-grid">
+      <div>
+        <div class="info-list">
+          <div class="info-row">
+            <div class="label">WhatsApp</div>
+            <div class="value"><a href="https://wa.me/5569992472940" target="_blank" rel="noopener">(69) 99247-2940</a></div>
+          </div>
+          <div class="info-row">
+            <div class="label">Endereço</div>
+            <div class="value">Rua Paulo Forte, 6003 — Aponiã, Porto Velho - RO</div>
+          </div>
+          <div class="info-row">
+            <div class="label">Instagram</div>
+            <div class="value"><a href="https://bit.ly/whatsciecoficial" target="_blank" rel="noopener">bit.ly/whatsciecoficial</a></div>
+          </div>
+          <div class="info-row">
+            <div class="label">Facebook</div>
+            <div class="value"><a href="https://www.facebook.com/share/14n17FfNhoA/" target="_blank" rel="noopener">Lelé Santos Barros</a></div>
+          </div>
+        </div>
+        <a class="btn" style="margin-top:30px;" href="https://wa.me/5569992472940?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Arlete%20Centro%20de%20Est%C3%A9tica." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+      </div>
+      <div class="map-frame">
+        <iframe
+          src="https://www.google.com/maps?q=Rua+Paulo+Forte,+6003+-+Aponi%C3%A3,+Porto+Velho+-+RO&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Localização Arlete Centro de Estética"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand" style="display:flex;">
+      <img src="logo_ciec.png" alt="Arlete Centro de Estética">
+    </div>
+    <p>Rua Paulo Forte, 6003 — Aponiã, Porto Velho - RO · (69) 99247-2940</p>
+    <p style="margin-top:6px;">© <span id="year"></span> Arlete Centro de Estética. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/5569992472940?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Arlete%20Centro%20de%20Est%C3%A9tica." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.25-.45.07-1.02.1-1.65-.1-.38-.12-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.75 0-1.3.68-1.94.92-2.2.24-.27.53-.34.7-.34h.5c.16 0 .38-.03.58.44.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.13.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.28-.12.55.16.27.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.2 1.37.27.13.43.11.6-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.55.73 1.82.86.27.13.45.2.51.31.07.11.07.65-.15 1.27z"/></svg>
+</a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
