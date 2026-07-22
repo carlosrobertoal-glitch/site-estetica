@@ -13,3 +13,14 @@ O site está disponível via **GitHub Pages** no endereço:
 
 ## 📞 Contato
 Agende seu atendimento pelo WhatsApp ou visite nossa clínica em Porto Velho.
+## 📍 Endereço
+Rua Exemplo, nº 123 – Porto Velho
+
+## 🕒 Horários
+Segunda a Sexta: 9h às 18h  
+Sábado: 9h às 13h
+
+## 💆 Serviços
+- Massagem linfática
+- Limpeza de pele
+- Tratamentos faciais
