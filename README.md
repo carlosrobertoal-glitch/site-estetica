@@ -35,3 +35,4 @@ Sábado: 9h às 13h
 - Massagem linfática
 - Limpeza de pele
 - Tratamentos faciais
+Atualizei README com endereço e horários
